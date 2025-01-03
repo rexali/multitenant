@@ -33,6 +33,7 @@ export const authOptions: NextAuthOptions = {
     sessionsTable: sessions,
     verificationTokensTable: verificationTokens,
   }) as Adapter,
+  
   session: { strategy: "jwt" },
   cookies: {
     sessionToken: {
